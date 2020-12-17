@@ -1,0 +1,28 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <m:SendNotification>
+            <m:ResponseMessages>
+<!--                <m:DeleteItemResponseMessage ResponseClass="Success">-->
+<!--                    <m:MessageText>Hei</m:MessageText>-->
+<!--                    <m:ResponseCode>ErrorInvalidPropertyAppend</m:ResponseCode>-->
+<!--                    <m:DescriptiveLinkKey>0</m:DescriptiveLinkKey>-->
+<!--                    <m:MessageXml><Hei>f</Hei></m:MessageXml>-->
+<!--                </m:DeleteItemResponseMessage>-->
+                <m:CreateItemResponseMessage ResponseClass="Success">
+                    <m:MessageText>Hei</m:MessageText>
+<!--                    <m:Items>-->
+<!--                        <t:Item>-->
+<!--                            <t:ItemId Id="asdfasdjfhkljh12947"/>-->
+<!--                            <t:Body BodyType="Text">-->
+<!--                                Hallo!-->
+<!--                            </t:Body>-->
+<!--                        </t:Item>-->
+<!--                    </m:Items>-->
+                </m:CreateItemResponseMessage>
+            </m:ResponseMessages>
+        </m:SendNotification>
+    </soapenv:Body>
+</soapenv:Envelope>

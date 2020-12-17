@@ -1,0 +1,44 @@
+#standard-kataloger for deriverte data
+target/
+activemq-data/
+build/
+bin/
+dist/
+vendor/
+
+#så man ikke pusher helm-chart med hemmeligheter (ifm k8s-migrering)
+helm/
+
+#eclipse
+.settings
+.cache/
+.classpath
+.project
+.directory/
+
+#intellij
+.idea/
+*.iml
+*.ipr
+*.iws
+# Scala worksheet i IntelliJ:
+*.sc
+
+#netbeans
+nb-configuration.xml
+nbproject/
+nbactions.xml
+
+#annet
+*~
+.DS_Store
+.metadata/
+.m2/
+*.pyc
+profiles.xml
+rebel.xml
+*.db
+# Symlink til target-katalogen:
+target
+.java-version
+applicationsecrets.yaml
